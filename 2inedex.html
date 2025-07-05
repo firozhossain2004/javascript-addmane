@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="mockup-phone bg-yellow-200">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display grid place-content-center">
+          <!--chas in open  -->
+          <section id="cashin-from">
+          <div> 
+            <div class="stats shadow">
+              <div class="stat">
+                <div id="account-balance" class="stat-value">89400</div>
+                <div class="stat-descb">Available Balance</div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <!-- manyadd -->
+           <div class=""><!--hidden1-->
+           <button class="  btn btn-lg  bg-green-300">Add Many</button> 
+           <button id="show-dispaly-cashout" class="btn btn-lg bg-red-300">Cashc Out</button>
+           <div class="divider"></div>
+           </div>
+           <!-- from -->
+       <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl bg-green-300 ">
+      <div class="card-body          ">
+        <fieldset class="fieldset">
+          <label  class="label text-black">User Account Number</label>
+          <input id="input-account" type="text" class="input" placeholder="Enter 11 digit number" />
+          <label class="label  text-black">Pin Number</label>
+          <input id="input-pin" type="password" class="input" autocomplete="off" placeholder="Enter 4 digit pin number "  text-black/>
+          
+          <button id="button-add" class="btn btn-neutral mt-4 bg-green-600">Send Now</button>
+          </div>
+          </div>
+          </section>
+         
+       <!--chas in end  -->
+
+
+        <!--chas 1st out  -->
+         <section id="cashout-from" class="hidden">
+            <div>
+          <div>
+            <div class="stats shadow">
+              <div class="stat">
+                <div id="totalaccount-balance" class="stat-value">89400</div>
+                <div class="stat-descb">Available Balance</div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+           <!-- manyadd  -->
+           <button  id="cashput-button"  class="btn btn-lg bg-green-300">Add Many</button>
+           <button  class="btn btn-lg bg-red-300">Cashc Out</button>
+           <div class="divider"></div>
+          
+           <!-- from -->
+             <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl bg-red-300">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label  class="label text-black">User Account Number</label>
+          <input id="input-cashout-account" type="text" class="input" placeholder="Enter 11 digit number" />
+          <label class="label  text-black">Pin Number</label>
+          <input id="cashout-pin" type="password" class="input" autocomplete="off" placeholder="Enter 4 digit pin number "  text-black/>
+          
+          <button id="button-add-cashout" class="btn btn-neutral mt-4 bg-red-500">cash out</button>
+          </div>
+          </section>
+          <!--chas out -->
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</main>
+<script src="js/addmany.js"></script>
+<script src="js/cashout.js"></script>
+<script src="js/change-file.js"></script>
+</body>
+</html>
+
